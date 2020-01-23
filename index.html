@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+
+    <title>Etch-a-Sketch</title>
+
+    <!-- This is a comment, by the way -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="stylesheet.css">
+<link
+href="https://fonts.googleapis.com/css?family=Pacifico"
+rel="stylesheet"
+/>
+<!-- <link rel="stylesheet" href="danpete.css"> -->
+</head>
+<body>
+
+<header id="main-header" class="bg-success text-white p-4 mb-3">
+    <div>
+      <div class="row">
+        <div class="col-md-6">
+            <h1 id="header-title" class="title">Etch a Sketch</h1>
+        </div>
+        <div class="col-md-6 align-self-center">
+            <input type="text" class="form-control" id="gridno" placeholder="Enter your Grid size?">
+            <button class="btn btn-dark btn-block" id="button">Add Grid
+            </button><br>
+        </div>
+      </div>
+    </div>
+    <br>
+  </header>
+
+
+ <div class="app">
+ <div class="controls">
+  <button class="basic">Basic</button>
+  <button id="color-picker">Pick Color</button>
+  <button class="random">Random Colors</button>
+  <button class="real">Realistic</button>
+  <button class="resize">Resize</button>
+  <button class="clear">Clear</button>
+  <div class="check-button">
+    <input id="click-check" type="checkbox" checked />Hold Click to
+    Draw<br />
+  </div>
+</div>
+<div class="colors">
+  <div class="current"></div>
+  <div class="color red" data-color="red"></div>
+  <div class="color yellow" data-color="yellow"></div>
+  <div class="color blue" data-color="blue"></div>
+  <div class="color green" data-color="green"></div>
+  <div class="color black" data-color="black"></div>
+  <div class="color white" data-color="white"></div>
+</div>
+<div class="container-sketch"></div>
+</div>
+  <script src="https://unpkg.com/vanilla-picker@2"></script>
+  <script src="danpete.js"></script>
+   <script src="main.js"></script>
+  </body>
+  </html>
